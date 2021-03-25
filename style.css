@@ -1,0 +1,273 @@
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+  background-color: slategray;
+  color: black;
+}
+
+h1 {
+  font-family: verdana, arial, sans-serif; 
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  padding: 20px;
+  border-radius: 20px;
+}
+
+#secMsg1 {
+    background-image: url( 'https://cdn.glitch.com/71a2cd53-851f-4d28-820d-e3a23fea262c%2FB732CC98-EECB-499C-9704-4B65856AA462.png?v=1616568740839' );
+    background-size: 150px 140px;
+}
+
+#secMsg1:active, #secMsg1.lit {
+    background-image: url( 'https://cdn.glitch.com/71a2cd53-851f-4d28-820d-e3a23fea262c%2F4DD88991-067B-4B75-998E-6CCC2F4FAAB5.png?v=1616568750438' );
+    background-size: 150px 140px;
+}
+
+#secMsg2 {
+    background-image: url( 'https://cdn.glitch.com/71a2cd53-851f-4d28-820d-e3a23fea262c%2F4DD88991-067B-4B75-998E-6CCC2F4FAAB5.png?v=1616568750438' );
+    background-size: 150px 140px;
+}
+
+#secMsg2:active, #secMsg2.lit {
+    background-image: url( 'https://cdn.glitch.com/71a2cd53-851f-4d28-820d-e3a23fea262c%2FB732CC98-EECB-499C-9704-4B65856AA462.png?v=1616568740839' );
+    background-size: 150px 140px;
+}
+
+#secMsg3 {
+    background-image: url( 'https://cdn.glitch.com/71a2cd53-851f-4d28-820d-e3a23fea262c%2FB732CC98-EECB-499C-9704-4B65856AA462.png?v=1616568740839' );
+    background-size: 150px 140px;
+}
+
+#secMsg3:active, #secMsg3.lit {
+    background-image: url( 'https://cdn.glitch.com/71a2cd53-851f-4d28-820d-e3a23fea262c%2F4DD88991-067B-4B75-998E-6CCC2F4FAAB5.png?v=1616568750438' );
+    background-size: 150px 140px;
+}
+
+#secMsg4 {
+    background-image: url( 'https://cdn.glitch.com/71a2cd53-851f-4d28-820d-e3a23fea262c%2F4DD88991-067B-4B75-998E-6CCC2F4FAAB5.png?v=1616568750438' );
+    background-size: 150px 140px;
+}
+
+#secMsg4:active, #secMsg4.lit {
+    background-image: url( 'https://cdn.glitch.com/71a2cd53-851f-4d28-820d-e3a23fea262c%2FB732CC98-EECB-499C-9704-4B65856AA462.png?v=1616568740839' );
+    background-size: 150px 140px;
+}
+
+#secMsg5 {
+    background-image: url( 'https://cdn.glitch.com/71a2cd53-851f-4d28-820d-e3a23fea262c%2FB732CC98-EECB-499C-9704-4B65856AA462.png?v=1616568740839' );
+    background-size: 150px 140px;
+}
+
+#secMsg5:active, #secMsg5.lit {
+    background-image: url( 'https://cdn.glitch.com/71a2cd53-851f-4d28-820d-e3a23fea262c%2F4DD88991-067B-4B75-998E-6CCC2F4FAAB5.png?v=1616568750438' );
+    background-size: 150px 140px;
+}
+
+#secMsg6 {
+    background-image: url( 'https://cdn.glitch.com/71a2cd53-851f-4d28-820d-e3a23fea262c%2F4DD88991-067B-4B75-998E-6CCC2F4FAAB5.png?v=1616568750438' );
+    background-size: 150px 140px;
+}
+
+#secMsg6:active, #secMsg6.lit {
+    background-image: url( 'https://cdn.glitch.com/71a2cd53-851f-4d28-820d-e3a23fea262c%2FB732CC98-EECB-499C-9704-4B65856AA462.png?v=1616568740839' );
+    background-size: 150px 140px;
+}
+
+#secMsg7 {
+    background-image: url( 'https://cdn.glitch.com/71a2cd53-851f-4d28-820d-e3a23fea262c%2FB732CC98-EECB-499C-9704-4B65856AA462.png?v=1616568740839' );
+    background-size: 150px 140px;
+}
+
+#secMsg7:active, #secMsg7.lit {
+    background-image: url( 'https://cdn.glitch.com/71a2cd53-851f-4d28-820d-e3a23fea262c%2F4DD88991-067B-4B75-998E-6CCC2F4FAAB5.png?v=1616568750438' );
+    background-size: 150px 140px;
+}
+
+#secMsg8 {
+    background-image: url( 'https://cdn.glitch.com/71a2cd53-851f-4d28-820d-e3a23fea262c%2F4DD88991-067B-4B75-998E-6CCC2F4FAAB5.png?v=1616568750438' );
+    background-size: 150px 140px;
+}
+
+#secMsg8:active, #secMsg8.lit {
+    background-image: url( 'https://cdn.glitch.com/71a2cd53-851f-4d28-820d-e3a23fea262c%2FB732CC98-EECB-499C-9704-4B65856AA462.png?v=1616568740839' );
+    background-size: 150px 140px;
+}
+
+#secMsg9 {
+    background-image: url( 'https://cdn.glitch.com/71a2cd53-851f-4d28-820d-e3a23fea262c%2FB732CC98-EECB-499C-9704-4B65856AA462.png?v=1616568740839' );
+    background-size: 150px 140px;
+}
+
+#secMsg9:active, #secMsg9.lit {
+    background-image: url( 'https://cdn.glitch.com/71a2cd53-851f-4d28-820d-e3a23fea262c%2F4DD88991-067B-4B75-998E-6CCC2F4FAAB5.png?v=1616568750438' );
+    background-size: 150px 140px;
+}
+
+#secMsg10 {
+    background-image: url( 'https://cdn.glitch.com/71a2cd53-851f-4d28-820d-e3a23fea262c%2F4DD88991-067B-4B75-998E-6CCC2F4FAAB5.png?v=1616568750438' );
+    background-size: 150px 140px;
+}
+
+#secMsg10:active, #secMsg10.lit {
+    background-image: url( 'https://cdn.glitch.com/71a2cd53-851f-4d28-820d-e3a23fea262c%2FB732CC98-EECB-499C-9704-4B65856AA462.png?v=1616568740839' );
+    background-size: 150px 140px;
+}
+
+#secMsg11 {
+    background-image: url( 'https://cdn.glitch.com/71a2cd53-851f-4d28-820d-e3a23fea262c%2FB732CC98-EECB-499C-9704-4B65856AA462.png?v=1616568740839' );
+    background-size: 150px 140px;
+}
+
+#secMsg11:active, #secMsg11.lit {
+    background-image: url( 'https://cdn.glitch.com/71a2cd53-851f-4d28-820d-e3a23fea262c%2F4DD88991-067B-4B75-998E-6CCC2F4FAAB5.png?v=1616568750438' );
+    background-size: 150px 140px;
+}
+
+#secMsg12 {
+    background-image: url( 'https://cdn.glitch.com/71a2cd53-851f-4d28-820d-e3a23fea262c%2F4DD88991-067B-4B75-998E-6CCC2F4FAAB5.png?v=1616568750438' );
+    background-size: 150px 140px;
+}
+
+#secMsg12:active, #secMsg12.lit {
+    background-image: url( 'https://cdn.glitch.com/71a2cd53-851f-4d28-820d-e3a23fea262c%2FB732CC98-EECB-499C-9704-4B65856AA462.png?v=1616568740839' );
+    background-size: 150px 140px;
+}
+
+#gameButtonArea > button {
+  width:150px;
+  height:150px;
+  margin:2px;
+}
+
+#button1 {
+    background: lightgreen;
+}
+
+#button1:active, #button1.lit {
+    background:green;
+}
+
+#button2 {
+    background: lightblue;
+}
+
+#button2:active, #button2.lit {
+    background:blue;
+}
+
+#button3 {
+    background: pink;
+}
+
+#button3:active, #button3.lit {
+    background:red;
+}
+
+#button4 {
+    background: lightyellow;
+}
+
+#button4:active, #button4.lit {
+    background:yellow;
+}
+
+#button5 {
+    background: #FEB265;
+}
+
+#button5:active, #button5.lit {
+    background:#FE840B;
+}
+
+#button6 {
+    background: mediumorchid;
+}
+
+#button6:active, #button6.lit {
+    background:purple;
+}
+
+#button7 {
+    background: lightgray;
+}
+
+#button7:active, #button7.lit {
+    background:grey;
+}
+
+#button8 {
+    background: tan;
+}
+
+#button8:active, #button8.lit {
+    background:saddlebrown;
+}
+
+#button9 {
+    background: slategray;
+}
+
+#button9:active, #button9.lit {
+    background:black;
+}
+
+#button10 {
+    background: yellowgreen;
+}
+
+#button10:active, #button10.lit {
+    background:olivedrab;
+}
+
+#button11 {
+    background: steelblue;
+}
+
+#button11:active, #button11.lit {
+    background:midnightblue;
+}
+
+#button12 {
+    background: #7C876A;
+}
+
+#button12:active, #button12.lit {
+    background:#545B47;
+}
+
+#button13 {
+    background: #69FEE5;
+}
+
+#button13:active, #button13.lit {
+    background:#29CAAF;
+}
+
+#button14 {
+    background: #B9B9F7;
+}
+
+#button14:active, #button14.lit {
+    background:#1C1CFE;
+}
+
+#button15 {
+    background: #C6A891;
+}
+
+#button15:active, #button15.lit {
+    background:#845938;
+}
+#button16 {
+    background: #E9E6E3;
+}
+
+#button16:active, #button16.lit {
+    background:#BAB8B6;
+}
