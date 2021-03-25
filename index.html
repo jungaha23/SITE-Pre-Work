@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hello!</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <h1>Jungah's Light and Sound Memory Game</h1>
+    
+    <p>
+      Welcome to Jungah's version of the <a href="https://www.youtube.com/watch?v=Zd_rLsJGtts">Light and Sound Memory Game</a>! You can click that link for a demo of the physical rendition of this game. To play, click a difficulty mode and repeat back the pattern. 
+    </p>
+      
+    <div id="gameModeButtons">
+      <button id="easyMode" onclick="startGame(4)">
+      Easy
+    </button>
+      <button id="medMode" onclick="startGame(9)">
+      Medium
+    </button>
+      <button id="hardMode" onclick="startGame(16)">
+      Hard
+    </button>
+      <button id="secretMessage" onclick="startGame(1)">  <!-- need to fix bug so secret message plays instead of the game tones -->
+      Secret Message!
+    </button>
+    </div>
+    
+    <button id="startBtn" class="hidden" onclick="resumeGame()">
+      Start
+    </button>
+    
+    <button id="stopBtn" class="hidden" onclick="stopGame()">
+      Stop
+    </button>
+    
+    <div id="special sounds">
+
+<audio id="a1" src="https://cdn.glitch.com/71a2cd53-851f-4d28-820d-e3a23fea262c%2FHi.m4a?v=1616570556758" onclick="PlaySound"></audio>
+<audio id="a2" src="https://cdn.glitch.com/71a2cd53-851f-4d28-820d-e3a23fea262c%2FCodepath.m4a?v=1616570562937" onclick="PlaySound"></audio>
+<audio id="a3" src="https://cdn.glitch.com/71a2cd53-851f-4d28-820d-e3a23fea262c%2FI.m4a?v=1616570574136"  onclick="PlaySound"></audio>
+<audio id="a4" src="https://cdn.glitch.com/71a2cd53-851f-4d28-820d-e3a23fea262c%2FHope.m4a?v=1616570579945" onclick="PlaySound"></audio>
+<audio id="a5" src="https://cdn.glitch.com/71a2cd53-851f-4d28-820d-e3a23fea262c%2FTo.m4a?v=1616570585551" onclick="PlaySound"></audio>
+<audio id="a6" src="https://cdn.glitch.com/71a2cd53-851f-4d28-820d-e3a23fea262c%2FMeet.m4a?v=1616570590164" onclick="PlaySound"></audio>
+<audio id="a7" src="https://cdn.glitch.com/71a2cd53-851f-4d28-820d-e3a23fea262c%2FYou.m4a?v=1616570594760" onclick="PlaySound"></audio>
+<audio id="a8" src="https://cdn.glitch.com/71a2cd53-851f-4d28-820d-e3a23fea262c%2FIn.m4a?v=1616570598931" onclick="PlaySound"></audio>
+<audio id="a9" src="https://cdn.glitch.com/71a2cd53-851f-4d28-820d-e3a23fea262c%2FAn.m4a?v=1616570604036" onclick="PlaySound"></audio>
+<audio id="a10" src="https://cdn.glitch.com/71a2cd53-851f-4d28-820d-e3a23fea262c%2FInterview.m4a?v=1616570613277" onclick="PlaySound"></audio>
+<audio id="a11" src="https://cdn.glitch.com/71a2cd53-851f-4d28-820d-e3a23fea262c%2FSincerely.m4a?v=1616570616191" onclick="PlaySound"></audio>
+<audio id="a12" src="https://cdn.glitch.com/71a2cd53-851f-4d28-820d-e3a23fea262c%2FJUNGAH.m4a?v=1616570620711" onclick="PlaySound"></audio>
+
+    </div>
+    
+    <div id="gameButtonArea">
+      <button id="button1" onmousedown="startTone(1)" onmouseup="stopTone()" onclick="guess(1)" class="hidden"></button>
+      <button id="button2" onmousedown="startTone(2)" onmouseup="stopTone()" onclick="guess(2)" class="hidden"></button>
+      <button id="button3" onmousedown="startTone(3)" onmouseup="stopTone()" onclick="guess(3)" class="hidden"></button>
+      <button id="button4" onmousedown="startTone(4)" onmouseup="stopTone()" onclick="guess(4)" class="hidden"></button>
+      <button id="button5" onmousedown="startTone(5)" onmouseup="stopTone()" onclick="guess(5)" class="hidden"></button>
+      <button id="button6" onmousedown="startTone(6)" onmouseup="stopTone()" onclick="guess(6)" class="hidden"></button>
+      <button id="button7" onmousedown="startTone(7)" onmouseup="stopTone()" onclick="guess(7)" class="hidden"></button>
+      <button id="button8" onmousedown="startTone(8)" onmouseup="stopTone()" onclick="guess(8)" class="hidden"></button>
+      <button id="button9" onmousedown="startTone(9)" onmouseup="stopTone()" onclick="guess(9)" class="hidden"></button>
+      <button id="button10" onmousedown="startTone(10)" onmouseup="stopTone()" onclick="guess(10)" class="hidden"></button>
+      <button id="button11" onmousedown="startTone(11)" onmouseup="stopTone()" onclick="guess(11)" class="hidden"></button>
+      <button id="button12" onmousedown="startTone(12)" onmouseup="stopTone()" onclick="guess(12)" class="hidden"></button>
+      <button id="button13" onmousedown="startTone(13)" onmouseup="stopTone()" onclick="guess(13)" class="hidden"></button>
+      <button id="button14" onmousedown="startTone(14)" onmouseup="stopTone()" onclick="guess(14)" class="hidden"></button>
+      <button id="button15" onmousedown="startTone(15)" onmouseup="stopTone()" onclick="guess(15)" class="hidden"></button>
+      <button id="button16" onmousedown="startTone(16)" onmouseup="stopTone()" onclick="guess(16)" class="hidden"></button>
+      
+      <!-- secret message for CodePath :) -->
+      <button id="secMsg1" onclick="guess(secMsg1)" onmousedown="playAudio('a1')" class="hidden"></button>
+      <button id="secMsg2" onclick="guess(secMsg2)" onmousedown="playAudio('a2')" class="hidden"></button>
+      <button id="secMsg3" onclick="guess(secMsg3)" onmousedown="playAudio('a3')" class="hidden"></button>
+      <button id="secMsg4" onclick="guess(secMsg4)" onmousedown="playAudio('a4')" class="hidden"></button>
+      <button id="secMsg5" onclick="guess(secMsg5)" onmousedown="playAudio('a5')" class="hidden"></button>
+      <button id="secMsg6" onclick="guess(secMsg6)" onmousedown="playAudio('a6')" class="hidden"></button>
+      <button id="secMsg7" onclick="guess(secMsg7)" onmousedown="playAudio('a7')" class="hidden"></button>
+      <button id="secMsg8" onclick="guess(secMsg8)" onmousedown="playAudio('a8')" class="hidden"></button>
+      <button id="secMsg9" onclick="guess(secMsg9)" onmousedown="playAudio('a9')" class="hidden"></button>
+      <button id="secMsg10" onclick="guess(secMsg10)" onmousedown="playAudio('a10')" class="hidden"></button>
+      <button id="secMsg11" onclick="guess(secMsg11)" onmousedown="playAudio('a11')" class="hidden"></button>
+      <button id="secMsg12" onclick="guess(secMsg12)" onmousedown="playAudio('a12')" class="hidden"></button>
+      
+    </div> 
+    
+  </body>
+</html>
